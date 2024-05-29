@@ -21,4 +21,8 @@ export class MyService {
   getUsers(): Observable<any> {
     return this.http.get(this.apiUrl2);
   }
+
+  deleteUsers(): Observable<any> {
+    return this.http.delete(this.apiUrl2);
+  }
 }
